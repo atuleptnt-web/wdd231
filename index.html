@@ -1,0 +1,62 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 231 Course Home Page">
+  <meta name="author" content="Paul Tetteh Nerquaye-Tetteh">
+  <title>WDD 231 | Course Home</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="images/byui-logo.svg" alt="BYU-I Logo">
+    <span>Paul Tetteh Nerquaye-Tetteh</span>
+    <button id="menu" aria-label="Menu">&#9776;</button>
+  </header>
+
+  <nav id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="final/index.html">Final</a>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+    <section>
+      <h2>Overview</h2>
+      <p>This is the course home page for WDD 231.</p>
+    </section>
+    <section>
+      <h2>Certificate Courses</h2>
+      <div id="course-cards"></div>
+      <div id="credits"></div>
+      <div>
+        <button id="allBtn">All Courses</button>
+        <button id="wddBtn">WDD Courses</button>
+        <button id="cseBtn">CSE Courses</button>
+      </div>
+    </section>
+    <section>
+      <h2>Resources</h2>
+      <p>Links and resources will be added here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/atuleptnt-web/wdd231">GitHub</a>
+      <a href="https://linkedin.com/in/yourlinkedinprofile">LinkedIn</a>
+      <a href="#">Twitter</a>
+    </div>
+    <p>&copy; <span id="year"></span> Paul Tetteh Nerquaye-Tetteh | Accra, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
