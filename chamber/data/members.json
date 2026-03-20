@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nuahn Seasonal Hub",
+    "address": "123 Market Street, Accra",
+    "phone": "+233-20-123-4567",
+    "website": "https://nuahn.com",
+    "image": "nuahn.jpg",
+    "membership": 3,
+    "info": "Gold member specializing in seasonal produce and logistics."
+  },
+  {
+    "name": "PTNT Solutions",
+    "address": "45 Business Ave, Accra",
+    "phone": "+233-24-987-6543",
+    "website": "https://ptntsolutions.com",
+    "image": "ptnt.jpg",
+    "membership": 2,
+    "info": "Silver member offering legal and technical consulting."
+  }
+]
