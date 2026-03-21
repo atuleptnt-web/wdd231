@@ -1,6 +1,6 @@
 /* Base styles for mobile-first design */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif; /* ✅ use Google Font */
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -48,7 +48,7 @@ main {
 /* Member container styles */
 #members.grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;   /* single column on mobile */
   gap: 1rem;
 }
 
@@ -62,9 +62,13 @@ main {
   border: 1px solid #ccc;
   padding: 1rem;
   background: #f9f9f9;
+  width: 100%;                 /*  ensures card fills container */
+  box-sizing: border-box;      /*  padding included in width */
 }
 
 .member-card img {
   max-width: 100%;
   height: auto;
+  display: block;              /*  removes inline spacing issues */
+  margin-bottom: 0.5rem;
 }
