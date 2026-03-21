@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accra Chamber of Commerce | Home</title>
+  <meta name="description" content="Welcome to the Accra Chamber of Commerce. Discover events, weather updates, and member spotlights.">
+  <meta name="author" content="Paul Tetteh Nerquaye-Tetteh">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/weather.js" type="module" defer></script>
+  <script src="scripts/spotlights.js" type="module" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Accra city skyline">
+      <div class="hero-text">
+        <h2>Connecting Businesses, Building Community</h2>
+        <a href="join.html" class="cta-button">Join Now</a>
+      </div>
+    </section>
+
+    <!-- Current Events -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Business Networking Breakfast – March 25</li>
+        <li>Annual Trade Fair – April 10</li>
+      </ul>
+    </section>
+
+    <!-- Weather -->
+    <section class="weather">
+      <h2>Local Weather</h2>
+      <div id="weather-info">
+        <!-- Weather data injected by weather.js -->
+      </div>
+    </section>
+
+    <!-- Member Spotlights -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-container">
+        <!-- Spotlight cards injected by spotlights.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accra Chamber of Commerce | Designed by Paul Tetteh Nerquaye-Tetteh</p>
+  </footer>
+
+</body>
+</html>
