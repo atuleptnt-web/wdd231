@@ -36,4 +36,61 @@
     height: auto;
     border-radius: 4px;
   }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  /* Events, Weather, Spotlights Layout */
+  .events, .weather, .spotlights {
+    margin-top: 2rem;
+  }
+
+  .events ul {
+    columns: 2; /* split events into two columns */
+  }
+
+  .weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .member-card {
+    text-align: left;
+  }
 }
