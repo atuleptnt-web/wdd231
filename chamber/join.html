@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accra Chamber of Commerce | Home</title>  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Facebook Open Graph Meta -->
+  <meta property="og:title" content="Accra Chamber of Commerce Directory">
+  <meta property="og:description" content="Welcome to the Accra Chamber of Commerce. Discover events, weather updates, and member spotlights.">
+  <meta property="og:image" content="https://atuleptnt-web.github.io/wdd231/chamber/og-image.jpg">
+  <meta property="og:url" content=" https://atuleptnt-web.github.io/wdd231/chamber/index.html">
+  <meta name="description" content="Welcome to the Accra Chamber of Commerce. Discover events, weather updates, and member spotlights.">
+  <meta name="author" content="Paul Tetteh Nerquaye-Tetteh">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+
+  <!-- Scripts -->
+  <script src="scripts/weather.js" type="module" ></script>
+  <script src="scripts/spotlights.js" type="module" ></script>
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+<form method="get" action="thankyou.html">
+  <!-- First Name -->
+  <label>
+    First Name:
+    <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+  </label>
+
+  <!-- Last Name -->
+  <label>
+    Last Name:
+    <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+  </label>
+
+  <!-- Organizational Title -->
+  <label>
+    Organizational Title:
+    <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+           pattern="[A-Za-z\\-\\s]{7,}">
+  </label>
+
+  <!-- Email -->
+  <label>
+    Email:
+    <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+  </label>
+
+  <!-- Mobile Phone -->
+  <label>
+    Mobile Phone:
+    <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required>
+  </label>
+
+  <!-- Organization Name -->
+  <label>
+    Organization Name:
+    <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+  </label>
+
+  <!-- Membership Level -->
+  <label>
+    Membership Level:
+    <select name="membership" title="Membership Level" required>
+      <option value="np">NP Membership (Non-Profit)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+  </label>
+
+  <!-- Organization Description -->
+  <label>
+    Organization Description:
+    <textarea name="description" title="Organization Description"></textarea>
+  </label>
+
+  <!-- Timestamp -->
+  <input type="hidden" name="timestamp" id="timestamp">
+
+  <!-- Submit -->
+  <input type="submit" value="Submit Application">
+</form>
+<div class="form-and-cards">
+  <!-- Form -->
+  <form method="get" action="thankyou.html">
+    <!-- form fields here -->
+  </form>
+
+  <!-- Membership Cards -->
+  <div class="membership-cards">
+    <div class="card np">
+      <h3>NP Membership</h3>
+      <a href="#npModal">Learn More</a>
+    </div>
+    <div class="card bronze">
+      <h3>Bronze Membership</h3>
+      <a href="#bronzeModal">Learn More</a>
+    </div>
+    <div class="card silver">
+      <h3>Silver Membership</h3>
+      <a href="#silverModal">Learn More</a>
+    </div>
+    <div class="card gold">
+      <h3>Gold Membership</h3>
+      <a href="#goldModal">Learn More</a>
+    </div>
+  </div>
+  <!-- Bronze Card -->
+<div class="card bronze">
+  <h3>Bronze Membership</h3>
+  <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+</div>
+
+<!-- NP Modal -->
+<div id="npModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('npModal')">&times;</span>
+    <h2>NP Membership Benefits</h2>
+    <ul>
+      <li>Access to networking events</li>
+    </ul>
+  </div>
+</div>
+<!-- Bronze Modal -->
+<div id="bronzeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+    <h2>Bronze Membership Benefits</h2>
+    <ul>
+      <li>Access to networking events</li>
+      <li>Discounts on workshops</li>
+      <li>Basic advertising opportunities</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Silver Modal -->
+<div id="silverModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('silverModal')">&times;</span>
+    <h2>Silver Membership Benefits</h2>
+    <ul>
+      <li>Access to networking events</li>
+      <li>Discounts on workshops</li>
+      <li>Basic advertising opportunities</li>
+      <li>Access to five star chefs catering services</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- Gold Modal -->
+<div id="goldModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('goldModal')">&times;</span>
+    <h2>Gold Membership Benefits</h2>
+    <ul>
+      <li>Access to networking events</li>
+      <li>Discounts on workshops</li>
+      <li>Basic advertising opportunities</li>
+      <li>Access to five star chefs' catering services </li>
+      <li>Access top financial planners </li>
+      <li>Access low interest loans</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+  <footer>
+    <p>&copy; 2026 Accra Chamber of Commerce | Designed by Paul Tetteh Nerquaye-Tetteh</p>
+   </footer>
+ <script>window.addEventListener("load", () => {
+  document.querySelectorAll(".card").forEach((card, i) => {
+    setTimeout(() => card.classList.add("show"), i * 300);
+  });
+});
+
+</script>
+<script>
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+// Close modal when clicking outside content
+window.onclick = function(event) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+};
+</script>
+</body>
+</html>
