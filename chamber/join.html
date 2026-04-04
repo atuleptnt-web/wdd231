@@ -111,19 +111,19 @@
   <div class="membership-cards">
     <div class="card np">
       <h3>NP Membership</h3>
-      <a href="#npModal">Learn More</a>
+    <a href="#npModal" class="open-modal" data-target="npModal">Learn More</a>
     </div>
     <div class="card bronze">
       <h3>Bronze Membership</h3>
-      <a href="#bronzeModal">Learn More</a>
+    <a href="#bronzeModal" class="open-modal" data-target="bronzeModal">Learn More</a>
     </div>
     <div class="card silver">
       <h3>Silver Membership</h3>
-      <a href="#silverModal">Learn More</a>
+    <a href="#silverModal" class="open-modal" data-target="silverModal">Learn More</a>
     </div>
     <div class="card gold">
       <h3>Gold Membership</h3>
-      <a href="#goldModal">Learn More</a>
+    <a href="#goldModal" class="open-modal" data-target="goldModal">Learn More</a>
     </div>
   </div>
   
@@ -131,7 +131,7 @@
 <!-- NP Modal -->
 <div id="npModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('npModal')">&times;</span>
+    <span class="close" data-target="npModal">&times;</span>
     <h2>NP Membership Benefits</h2>
     <ul>
       <li>Access to networking events</li>
@@ -141,7 +141,6 @@
 <!-- Bronze Modal -->
 <div id="bronzeModal" class="modal">
   <div class="modal-content">
-    <a href="#bronzeModal" class="open-modal" data-target="bronzeModal">More Info</a>
     <span class="close" data-target="bronzeModal">&times;</span>
     <h2>Bronze Membership Benefits</h2>
     <ul>
@@ -155,7 +154,7 @@
 <!-- Silver Modal -->
 <div id="silverModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('silverModal')">&times;</span>
+    <span class="close" data-target="silverModal">&times;</span>
     <h2>Silver Membership Benefits</h2>
     <ul>
       <li>Access to networking events</li>
@@ -170,7 +169,7 @@
 <!-- Gold Modal -->
 <div id="goldModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('goldModal')">&times;</span>
+    <span class="close" data-target="goldModal">&times;</span>
     <h2>Gold Membership Benefits</h2>
     <ul>
       <li>Access to networking events</li>
