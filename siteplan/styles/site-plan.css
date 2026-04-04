@@ -1,0 +1,48 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #004080;
+}
+
+header {
+  background-color: #004080;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.color-sample {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+.color-sample.primary {
+  background-color: #004080;
+}
+
+.color-sample.accent {
+  background-color: #F39C12;
+}
+
+section {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
