@@ -50,3 +50,26 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.wireframe {
+  border: 2px dashed #004080;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.box {
+  border: 1px solid #F39C12;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  background: #fafafa;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+.row .box {
+  flex: 1;
+}
