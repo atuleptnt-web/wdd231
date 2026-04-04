@@ -52,3 +52,10 @@
     filter: brightness(1.1);
   }
 }
+
+main {
+  max-height: 100vh;       /* keep within viewport height */
+  overflow-y: auto;        /* allow vertical scrolling */
+  padding: 1rem;
+  box-sizing: border-box;
+}
