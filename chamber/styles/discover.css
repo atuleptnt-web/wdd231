@@ -1,0 +1,54 @@
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Small screens: single column */
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6"
+      "card7"
+      "card8";
+  }
+}
+
+/* Medium screens: 2x4 layout */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .grid-container {
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+}
+
+/* Large screens: 4x2 layout */
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-areas:
+      "card1 card2 card3 card4"
+      "card5 card6 card7 card8";
+  }
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background: #fff;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect (desktop only) */
+@media (min-width: 641px) {
+  .card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
