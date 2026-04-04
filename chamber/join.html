@@ -27,6 +27,7 @@
   <!-- Scripts -->
   <script src="scripts/weather.js" type="module" ></script>
   <script src="scripts/spotlights.js" type="module" ></script>
+  <script src="scripts/join.js" type="module" ></script>
 </head>
 <body>
   <header>
@@ -188,30 +189,6 @@
   <footer>
     <p>&copy; 2026 Accra Chamber of Commerce | Designed by Paul Tetteh Nerquaye-Tetteh</p>
    </footer>
- <script>window.addEventListener("load", () => {
-  document.querySelectorAll(".card").forEach((card, i) => {
-    setTimeout(() => card.classList.add("show"), i * 300);
-  });
-});
 
-</script>
-<script>
-function openModal(id) {
-  document.getElementById(id).style.display = "block";
-}
-
-function closeModal(id) {
-  document.getElementById(id).style.display = "none";
-}
-
-// Close modal when clicking outside content
-window.onclick = function(event) {
-  document.querySelectorAll(".modal").forEach(modal => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-};
-</script>
 </body>
 </html>
