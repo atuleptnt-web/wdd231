@@ -64,6 +64,8 @@ main {
   background: #f9f9f9;
   width: 100%;                 /*  ensures card fills container */
   box-sizing: border-box;      /*  padding included in width */
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .member-card img {
@@ -72,7 +74,6 @@ main {
   display: block;              /*  removes inline spacing issues */
   margin-bottom: 0.5rem;
 }
-
 
 /* Hero Section */
 .hero {
@@ -149,17 +150,4 @@ main {
 .spotlights h2 {
   color: #0A3D62;
   margin-bottom: 1rem;
-}
-
-.member-card {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.member-card img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 0.5rem;
 }
