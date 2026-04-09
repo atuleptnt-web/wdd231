@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Nuahn Seasonal Hub",
+    "address": "123 Market Street, Accra",
+    "phone": "+233-20-123-4567",
+    "website": "https://nuahn.com",
+    "image": "nuahn.png",
+    "membership": 3,
+    "info": "Gold member specializing in seasonal produce and logistics."
+  },
+  {
+    "name": "PTNT Solutions",
+    "address": "45 Business Ave, Accra",
+    "phone": "+233-24-987-6543",
+    "website": "https://ptntsolutions.com",
+    "image": "ptnt.jpg",
+    "membership": 2,
+    "info": "Silver member offering legal and technical consulting."
+  },
+  {
+    "name": "Accra Coffee Collective",
+    "address": "12 Independence Ave, Accra",
+    "phone": "+233-30-222-1111",
+    "website": "https://accracoffee.com",
+    "image": "coffee.jpg",
+    "membership": 1,
+    "info": "Non-profit cooperative supporting local coffee farmers."
+  },
+  {
+    "name": "Kwame Tech Innovations",
+    "address": "88 Ring Road, Accra",
+    "phone": "+233-55-444-3333",
+    "website": "https://kwametech.com",
+    "image": "kwametech.jpg",
+    "membership": 3,
+    "info": "Gold member specializing in software and hardware solutions."
+  },
+  {
+    "name": "Ghana Arts & Crafts",
+    "address": "22 Osu Road, Accra",
+    "phone": "+233-27-555-6666",
+    "website": "https://ghanaarts.com",
+    "image": "arts.jpg",
+    "membership": 2,
+    "info": "Silver member promoting local artisans and cultural heritage."
+  },
+  {
+    "name": "Accra Fitness Center",
+    "address": "77 Labone Street, Accra",
+    "phone": "+233-50-777-8888",
+    "website": "https://accrafitness.com",
+    "image": "fitness.jpg",
+    "membership": 1,
+    "info": "Non-profit community gym offering affordable fitness programs."
+  },
+  {
+    "name": "West Africa Logistics",
+    "address": "5 Tema Port Road, Accra",
+    "phone": "+233-28-999-0000",
+    "website": "https://walogistics.com",
+    "image": "logistics.jpg",
+    "membership": 3,
+    "info": "Gold member providing regional shipping and logistics services."
+  }
+]

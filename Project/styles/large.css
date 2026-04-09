@@ -1,0 +1,93 @@
+/* Larger viewports */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  #members.grid {
+    display: grid; /*  required for grid to work */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;   /*  spacing between cards */
+  }
+
+  #members.list {
+    display: flex; /*  ensures list layout works */
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;            /* fill grid cell */
+    box-sizing: border-box; /* include padding in width */
+  }
+
+  .member-card img {
+    width: 100%;
+    max-width: 200px;       /* keep images reasonable */
+    height: auto;
+    border-radius: 4px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    position: relative;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  /* Events, Weather, Spotlights Layout */
+  .events, .weather, .spotlights {
+    margin-top: 2rem;
+  }
+
+  .events ul {
+    columns: 2; /* split events into two columns */
+  }
+
+  .weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+}
