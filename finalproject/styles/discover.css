@@ -19,7 +19,7 @@
 }
 
 /* Medium screens: 2x4 layout */
-@media (min-width: 641px) and (max-width: 1024px) {
+@media (max-width: 641px) and (max-width: 1024px) {
   .grid-container {
     grid-template-areas:
       "card1 card2"
@@ -30,7 +30,7 @@
 }
 
 /* Large screens: 4x2 layout */
-@media (min-width: 1025px) {
+@media (max-width: 1025px) {
   .grid-container {
     grid-template-areas:
       "card1 card2 card3 card4"
@@ -46,7 +46,7 @@
 }
 
 /* Hover effect (desktop only) */
-@media (min-width: 641px) {
+@media (max-width: 641px) {
   .card img:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
