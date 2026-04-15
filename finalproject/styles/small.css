@@ -12,7 +12,15 @@ header, footer {
   padding: 1rem;
   text-align: center;
 }
+img, video {
+  max-width: 100%;
+  height: auto;
+}
 
+main, section, .card, .modal-content {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 nav ul {
   list-style: none;
   padding: 0;
@@ -29,7 +37,25 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+/* Hamburger toggle button */
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin: 0.5rem;
+}
 
+/* Hide nav by default on small screens */
+#nav-menu.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #menu-toggle { display: none; }
+  #nav-menu { display: block; }
+}
 main {
   padding: 1rem;
 }

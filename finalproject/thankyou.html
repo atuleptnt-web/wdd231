@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Accra Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css">
+</head>
+<body>
+  <header>
+    <h1>Accra Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You for Joining!</h2>
+    <p>Your application has been submitted successfully. Here are the details you provided:</p>
+    <div id="form-data"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Accra Chamber of Commerce | Designed by Paul Tetteh Nerquaye-Tetteh</p>
+    <p>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img class="jigsaw"
+             src="https://jigsaw.w3.org/css-validator/images/vcss"
+             alt="Valid CSS!" />
+      </a>
+    </p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    let output = "<ul>";
+    for (const [key, value] of params.entries()) {
+      output += `<li><strong>${key}:</strong> ${value}</li>`;
+    }
+    output += "</ul>";
+    document.getElementById("form-data").innerHTML = output;
+  </script>
+</body>
+</html>

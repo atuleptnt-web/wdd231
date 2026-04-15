@@ -25,3 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Store last visit timestamp
+localStorage.setItem("lastVisit", new Date().toISOString());
+
+// Store membership choice
+document.querySelector("select[name='membership']").addEventListener("change", e => {
+  localStorage.setItem("membershipChoice", e.target.value);
+});
