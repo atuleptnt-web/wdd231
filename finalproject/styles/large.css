@@ -1,5 +1,14 @@
 /* Larger viewports */
 @media (min-width: 768px) {
+  /* Nav */
+  #menu-toggle {
+    display: none; /* hide hamburger */
+  }
+
+  #nav-menu {
+    display: block; /* force nav to show */
+  }
+
   nav ul {
     flex-direction: row;
     justify-content: center;
@@ -9,43 +18,41 @@
     margin: 0 1rem;
   }
 
+  /* Members grid/list */
   #members.grid {
-    display: grid; /*  required for grid to work */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;   /*  spacing between cards */
+    gap: 1.5rem;
   }
 
   #members.list {
-    display: flex; /*  ensures list layout works */
+    display: flex;
     flex-direction: column;
     gap: 1rem;
   }
 
   .member-card {
     display: flex;
-    flex-direction: column; /* stack content vertically */
+    flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    width: 100%;            /* fill grid cell */
-    box-sizing: border-box; /* include padding in width */
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .member-card img {
     width: 100%;
-    max-width: 200px;       /* keep images reasonable */
+    max-width: 200px;
     height: auto;
     border-radius: 4px;
   }
 
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
-  }
-
+  /* Main container */
   main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
+    box-sizing: border-box;
   }
 
   /* Hero Section */
@@ -75,7 +82,7 @@
   }
 
   .events ul {
-    columns: 2; /* split events into two columns */
+    columns: 2;
   }
 
   .weather {
@@ -88,33 +95,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
-  }
-
-}
-/* Large screens: always show nav */
-<<<<<<< HEAD
-
-=======
->>>>>>> 5362172631fdad86b3344a419a3113010a930b3f
-@media (min-width: 768px) {
-  #menu-toggle {
-    display: none; /* hide hamburger */
-  }
-
-  #nav-menu {
-<<<<<<< HEAD
-    display: block !important; /* force nav to show */
-=======
-    display: block; /* force nav to show */
-  }
-
-  nav ul {
-    flex-direction: row;
-    justify-content: center;
->>>>>>> 5362172631fdad86b3344a419a3113010a930b3f
-  }
-
-  nav li {
-    margin: 0 1rem;
   }
 }
