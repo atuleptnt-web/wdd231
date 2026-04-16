@@ -54,10 +54,10 @@
 }
 
 main {
-  max-height: 100vh;       /* keep within viewport height */
-  overflow-y: auto;        /* allow vertical scrolling */
+  min-height: 100vh;       /* keep within viewport height */
   padding: 1rem;
   box-sizing: border-box;
+  max-width:100%;
 }
 
 .card1 { grid-area: card1; }
@@ -78,4 +78,11 @@ main {
   text-align: center;
   font-weight: 500;
   color: #004466;
+}
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
 }
