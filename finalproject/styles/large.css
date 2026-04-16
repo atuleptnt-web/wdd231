@@ -91,3 +91,18 @@
   }
 
 }
+/* Large screens: always show nav */
+
+@media (min-width: 768px) {
+  #menu-toggle {
+    display: none; /* hide hamburger */
+  }
+
+  #nav-menu {
+    display: block !important; /* force nav to show */
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+}

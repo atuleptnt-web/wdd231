@@ -57,7 +57,10 @@ nav a {
   #nav-menu { display: block; }
 }
 main {
-  padding: 1rem;
+  padding: 1rem;        /* already there, increase if needed */
+  margin: 0 auto;       /* centers content */
+  max-width: 1200px;    /* keeps content from stretching edge-to-edge */
+  box-sizing: border-box;
 }
 
 .view-toggle {
