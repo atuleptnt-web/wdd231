@@ -31,17 +31,20 @@
 </head>
 <body>
   <header>
-    <h1>Accra Chamber of Commerce</h1>
-    <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-<nav id="nav-menu" class="hidden">
-  <ul>
-    <li><a href="index.html" aria-current="page">Home</a></li>
-    <li><a href="discover.html">Discover</a></li>
-    <li><a href="directory.html">Directory</a></li>
-    <li><a href="join.html">Join</a></li>
-  </ul>
-</nav>                          
-  </header>
+  <h1>Accra Chamber of Commerce</h1>
+  <!-- Hamburger button (only visible on small screens) -->
+  <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+  <!-- Nav menu (no hidden class by default) -->
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html" aria-current="page">Discover</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+    </ul>
+  </nav>
+</header>
 <main class="container">
   <h1>Discover Accra</h1>
   <div id="cards" class="grid-container"></div>
