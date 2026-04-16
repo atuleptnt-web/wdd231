@@ -37,6 +37,16 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
+/* Global content wrapper */
+.container {
+  margin: 0 auto;          /* center content */
+  padding: 1rem;           /* breathing room inside */
+  max-width: 1200px;       /* cap width on large screens */
+  width: 100%;             /* fit viewport */
+  box-sizing: border-box;  /* include padding in width */
+}
+
 /* Hamburger toggle button */
 #menu-toggle {
   background: none;
