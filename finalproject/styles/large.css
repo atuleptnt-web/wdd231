@@ -92,14 +92,26 @@
 
 }
 /* Large screens: always show nav */
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5362172631fdad86b3344a419a3113010a930b3f
 @media (min-width: 768px) {
   #menu-toggle {
     display: none; /* hide hamburger */
   }
 
   #nav-menu {
+<<<<<<< HEAD
     display: block !important; /* force nav to show */
+=======
+    display: block; /* force nav to show */
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+>>>>>>> 5362172631fdad86b3344a419a3113010a930b3f
   }
 
   nav li {
