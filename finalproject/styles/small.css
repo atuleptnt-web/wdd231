@@ -73,3 +73,19 @@ nav a {
     border-bottom: 2px solid #F9A825; /* highlight active page */
   }
 }
+
+/* Call-to-action button style */
+.cta-button {
+  background-color: #F9A825; /* Gold accent */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0A3D62; /* Deep Blue */
+}
