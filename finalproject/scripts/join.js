@@ -33,3 +33,5 @@ localStorage.setItem("lastVisit", new Date().toISOString());
 document.querySelector("select[name='membership']").addEventListener("change", e => {
   localStorage.setItem("membershipChoice", e.target.value);
 });
+
+document.getElementById("timestamp").value = new Date().toISOString();
